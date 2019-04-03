@@ -202,11 +202,12 @@ the dev wanted to have some containers accessible at `something.docker` and `ano
 you need to disable dinghy's proxy stuff (otherwise dinghy and dory will stomp on each other's resolv files):
 
 In your [`~/.dinghy/preferences.yml`](https://github.com/codekitchen/dinghy#preferences)
-file, disable the proxy:
+file, disable the proxy and resolver:
 
 ```yaml
 :preferences:
   :proxy_disabled: true
+  :dns_disabled: true
   ...
 ```
 
